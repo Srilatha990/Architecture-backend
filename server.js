@@ -18,7 +18,7 @@ const app = express();
 app.use(express.json());  // For parsing JSON request bodies
 
 // Enable CORS for all origins (or specify a particular origin)
-app.use(cors());  // Allow all origins (for development)
+// app.use(cors());  // Allow all origins (for development)
 // app.use(cors({ origin: 'http://localhost:3000' })); // Allow only frontend origin
 
 // Connect to MongoDB
