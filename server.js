@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const cors = require('cors');  // Import the cors package
+// const cors = require('cors');  // Import the cors package
 const serviceRoutes = require('./routes/serviceRoutes');
 const projectRoutes = require('./routes/projectRoutes');
 const blogRoutes = require('./routes/blogRoutes'); 
