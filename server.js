@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-// const cors = require('cors');  // Import the cors package
+const cors = require('cors');  // Import the cors package
 const serviceRoutes = require('./routes/serviceRoutes');
 const projectRoutes = require('./routes/projectRoutes');
 const blogRoutes = require('./routes/blogRoutes'); 
@@ -18,7 +18,7 @@ const app = express();
 app.use(express.json());  // For parsing JSON request bodies
 
 // Enable CORS for all origins (or specify a particular origin)
-// app.use(cors());  // Allow all origins (for development)
+app.use(cors());  // Allow all origins (for development)
 // app.use(cors({ origin: 'http://localhost:3000' })); // Allow only frontend origin
 
 // Connect to MongoDB
