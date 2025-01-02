@@ -20,7 +20,7 @@ app.use(express.json());  // For parsing JSON request bodies
 // Enable CORS for all origins (or specify a particular origin)
 app.use(cors());  // Allow all origins (for development)
 // app.use(cors({ origin: 'http://localhost:3000' })); // Allow only frontend origin
-
+app.use(cors({ origin: 'http://localhost:3000' }));
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB'))
